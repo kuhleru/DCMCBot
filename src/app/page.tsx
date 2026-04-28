@@ -85,7 +85,18 @@ export default function Home() {
           {commands.map((cmd) => (
             <button
               key={cmd.action}
-              style={styles.button(cmd.color)}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: "20px 12px",
+                background: `linear-gradient(180deg, ${cmd.color} 0%, ${cmd.color}99 100%)`,
+                border: "3px solid #000",
+                borderRadius: "4px",
+                cursor: loading !== null ? "not-allowed" : "pointer",
+                opacity: loading !== null ? 0.5 : 1,
+              }}
               onClick={() => sendCommand(cmd.action)}
               disabled={loading !== null}
             >
