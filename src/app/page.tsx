@@ -69,7 +69,13 @@ export default function Home() {
       <header style={styles.header}>
         <h1 style={styles.title}>⚔️ DCMCBot</h1>
         <div style={styles.statusBar}>
-          <span style={styles.statusDot(status === "Online" ? "#55FF55" : "#FF5555")} />
+          <span style={{
+            width: "12px",
+            height: "12px",
+            borderRadius: "50%",
+            background: status === "Online" ? "#55FF55" : "#FF5555",
+            boxShadow: `0 0 8px ${status === "Online" ? "#55FF55" : "#FF5555"}`,
+          }} />
           <span style={styles.statusText}>{status}</span>
         </div>
       </header>
