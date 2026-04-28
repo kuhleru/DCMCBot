@@ -159,15 +159,8 @@ const styles: Record<string, React.CSSProperties> = {
   statusBar: {
     display: "flex",
     alignItems: "center",
-    gap: "8px",
+gap: "8px",
   },
-  statusDot: (color: string) => ({
-    width: "12px",
-    height: "12px",
-    borderRadius: "50%",
-    background: color,
-    boxShadow: `0 0 8px ${color}`,
-  }),
   statusText: {
     fontSize: "14px",
     color: "#AAA",
