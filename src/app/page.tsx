@@ -80,7 +80,7 @@ export default function Home() {
         </div>
       </header>
 
-<main style={styles.main}>
+      <main style={styles.main}>
         <div style={styles.grid}>
           {commands.map((cmd) => (
             <button
